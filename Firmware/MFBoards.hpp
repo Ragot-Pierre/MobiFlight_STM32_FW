@@ -20,7 +20,7 @@
 #define MF_SERVO_SUPPORT 0
 #endif
 #ifndef MF_ANALOG_SUPPORT
-#define MF_ANALOG_SUPPORT 0
+#define MF_ANALOG_SUPPORT 1
 #endif
 #ifndef MF_OUTPUT_SHIFTER_SUPPORT
 #define MF_OUTPUT_SHIFTER_SUPPORT 0
@@ -47,6 +47,10 @@
 #define MAX_OUTPUT_SHIFTERS 0
 #define MAX_INPUT_SHIFTERS  0
 #define MAX_DIGIN_MUX       0
+
+
+
+#define DEBUG2CMDMESSENGER  0
 
 
 

@@ -19,6 +19,12 @@
 
 
 
+#if MF_UART_SUPPORT == 1
+#include "CustomUart.hpp"
+#endif
+
+
+
 #if MF_ANALOG_SUPPORT == 1
 #include "Analog.hpp"
 #endif
