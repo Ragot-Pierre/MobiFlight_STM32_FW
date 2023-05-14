@@ -11,7 +11,7 @@
 #if MF_ANALOG_SUPPORT == 1
 namespace Analog
 {
-    MFAnalog *analog[MAX_ANALOG_INPUTS];
+    MFAnalog *analog[MAX_ANALOG];
     uint8_t   analogRegistered = 0;
 
     void handlerOnAnalogChange(int value, uint8_t pin, const char *name)
@@ -24,7 +24,7 @@ namespace Analog
 
     void Add(uint8_t pin, char const *name = "AnalogInput", uint8_t sensitivity = 3)
     {
-        if (analogRegistered == MAX_ANALOG_INPUTS)
+        if (analogRegistered == MAX_ANALOG)
             return;
 
         if (!FitInMemory(sizeof(MFAnalog))) {

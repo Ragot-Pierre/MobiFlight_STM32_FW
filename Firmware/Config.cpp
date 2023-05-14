@@ -60,7 +60,7 @@ char      name[MEM_LEN_NAME]               = MOBIFLIGHT_NAME;
 const int MEM_LEN_CONFIG                   = MEMLEN_CONFIG;
 char      nameBuffer[MEM_LEN_CONFIG]       = "";
 uint16_t  configLength                     = 0;
-boolean   configActivated                  = false;
+bool   configActivated                  = false;
 
 void resetConfig();
 void readConfig();

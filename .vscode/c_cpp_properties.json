@@ -5,17 +5,21 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "C:\\Users\\Pierr\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.5.0\\variants\\STM32F1xx\\F103C8T_F103CB(T-U)/**",
-                "C:\\Users\\Pierr\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.5.0\\cores\\arduino\\**"
+                "C:\\Users\\Pierr\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.5.0\\cores\\arduino\\**",
+                "C:\\Users\\Pierr\\AppData\\Local\\Arduino15\\packages\\STMicroelectronics\\hardware\\stm32\\2.5.0\\libraries\\**",
+                "C:\\Users\\Pierr\\Documents\\Arduino\\libraries\\**"
             ],
             "defines": [
                 "_DEBUG",
                 "UNICODE",
-                "_UNICODE"
+                "_UNICODE",
+                "ARDUINO = 200"
             ],
             "windowsSdkVersion": "10.0.22000.0",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-msvc-x64"
+            "intelliSenseMode": "windows-msvc-x64",
+            "compilerPath": ""
         }
     ],
     "version": 4
