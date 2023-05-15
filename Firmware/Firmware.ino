@@ -159,11 +159,13 @@ void ResetBoard()
 void setup()
 {
     Serial.begin(115200);
+    Serial1.begin(460800);
     MFeeprom.init();
     attachCommandCallbacks();
     cmdMessenger.printLfCr();
     ResetBoard();
     initPollIntervals();
+    Serial1.print("Niquez-vous");
 }
 
 // ************************************************************

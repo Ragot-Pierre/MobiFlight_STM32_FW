@@ -7,7 +7,7 @@
     "DelayAfterFirmwareUpdate": 0,
     "DtrEnable": true,
     "MessageSize": 90,
-    "EEPROMSize": 2048
+    "EEPROMSize": 8192
   },
   "HardwareIds": [
     "^VID_0483&PID_5740"
@@ -40,49 +40,49 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 0,
-      "Name": "PB9"
+      "Name": "L_PB9"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 1,
-      "Name": "PB8"
+      "Name": "L_PB8"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 2,
-      "Name": "PB7"
+      "Name": "L_PB7"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 3,
-      "Name": "PB6"
+      "Name": "L_PB6"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 4,
-      "Name": "PB5"
+      "Name": "L_PB5"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 5,
-      "Name": "PB4"
+      "Name": "L_PB4"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 6,
-      "Name": "PB3"
+      "Name": "L_PB3"
     },
 
 
@@ -92,28 +92,14 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 7,
-      "Name": "PA15"
-    },
-    {
-      "isAnalog": false,
-      "isI2C": false,
-      "isPWM": false,
-      "Pin": 10,
-      "Name": "PA10"
-    },
-    {
-      "isAnalog": false,
-      "isI2C": false,
-      "isPWM": false,
-      "Pin": 11,
-      "Name": "PA9"
+      "Name": "L_PA15"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 12,
-      "Name": "PA8"
+      "Name": "L_PA8"
     },
 
 
@@ -123,28 +109,28 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 13,
-      "Name": "PB15"
+      "Name": "L_PB15"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 14,
-      "Name": "PB14"
+      "Name": "L_PB14"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 15,
-      "Name": "PB13"
+      "Name": "L_PB13"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 16,
-      "Name": "PB12"
+      "Name": "L_PB12"
     },
 
 
@@ -154,21 +140,21 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 17,
-      "Name": "PC13"
+      "Name": "L_PC13"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 18,
-      "Name": "PC14"
+      "Name": "L_PC14"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 19,
-      "Name": "PC15"
+      "Name": "L_PC15"
     },
 
     
@@ -178,21 +164,21 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 30,
-      "Name": "PB10"
+      "Name": "L_PB10"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 31,
-      "Name": "PB11"
+      "Name": "L_PB11"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 32,
-      "Name": "PB2"
+      "Name": "L_PB2"
     },
 
 
@@ -202,14 +188,14 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 33,
-      "Name": "PA13"
+      "Name": "L_PA13"
     },
     {
       "isAnalog": false,
       "isI2C": false,
       "isPWM": false,
       "Pin": 34,
-      "Name": "PA14"
+      "Name": "L_PA14"
     },
 
     
@@ -219,70 +205,122 @@
       "isI2C": false,
       "isPWM": false,
       "Pin": 192,
-      "Name": "PA0"
+      "Name": "L_A_PA0"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 193,
-      "Name": "PA1"
+      "Name": "L_A_PA1"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 194,
-      "Name": "PA2"
+      "Name": "L_A_PA2"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 195,
-      "Name": "PA3"
+      "Name": "L_A_PA3"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 196,
-      "Name": "PA4"
+      "Name": "L_A_PA4"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 197,
-      "Name": "PA5"
+      "Name": "L_A_PA5"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 198,
-      "Name": "PA6"
+      "Name": "L_A_PA6"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 199,
-      "Name": "PA7"
+      "Name": "L_A_PA7"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 200,
-      "Name": "PB0"
+      "Name": "L_A_PB0"
     },
     {
       "isAnalog": true,
       "isI2C": false,
       "isPWM": false,
       "Pin": 201,
-      "Name": "PB1"
+      "Name": "L_A_PB1"
+    },
+
+
+
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 100,
+      "Name": "E_1"
+    },
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 101,
+      "Name": "E_2"
+    },
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 102,
+      "Name": "E_3"
+    },
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 103,
+      "Name": "E_4"
+    },
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 104,
+      "Name": "E_5"
+    },
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 100,
+      "Name": "E_"
+    },
+    {
+      "isAnalog": false,
+      "isI2C": false,
+      "isPWM": false,
+      "Pin": 100,
+      "Name": "E_"
     }
   ]
 }

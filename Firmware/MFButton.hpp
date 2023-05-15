@@ -7,6 +7,7 @@
 #pragma once
 
 #include <Arduino.h>
+#include "MFBoards.hpp"
 
 extern "C" {
 // callback functions always follow the signature: void cmd(void);
@@ -31,6 +32,7 @@ public:
     void        triggerOnRelease();
     const char *_name;
     uint8_t     _pin;
+    uint8_t     _address;
 
 private:
     static buttonEvent _handler;
