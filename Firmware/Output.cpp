@@ -44,17 +44,17 @@ namespace Output
         int pin = cmdMessenger.readInt16Arg();
         int state = cmdMessenger.readInt16Arg();
 
-        if (pin < MAX_LOCAL)
+        if (_address)
+        {
+            Serial1.write(_address);
+            Serial1.write(pin);
+            Serial1.write(state);
+        }
+        else
         {
             // Set led
             analogWrite(pin, state); // why does the UI sends the pin number and not the x.th output number like other devices?
                                     //  output[pin]->set(state);      // once this is changed uncomment this
-        }
-        else
-        {
-            Serial1.write(0x42);
-            Serial1.write(pin);
-            Serial1.write(state);
         }
 
         setLastCommandMillis();

@@ -31,6 +31,7 @@ public:
     void        readBuffer();
     const char *_name;
     uint8_t     _pin;
+    uint8_t     _address;
 
 private:
     static analogEvent _handler;

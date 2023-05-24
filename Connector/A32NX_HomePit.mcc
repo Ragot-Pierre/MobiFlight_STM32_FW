@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="6f1fd007-b44f-4606-8215-5d6eaec5dc24">
+      <active>true</active>
+      <description>EXT_PWR_ON</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(A:EXTERNAL POWER AVAILABLE:1, Bool) (A:EXTERNAL POWER ON:1, Bool) and (L:A32NX_OVHD_INTLT_ANN) 0 == or (L:A32NX_ELEC_DC_BAT_BUS_IS_POWERED, Bool) and 1 and (L:A32NX_OVHD_INTLT_ANN, number) 2 == if{ 0.1 } els{ 1 } * (A:CIRCUIT GENERAL PANEL ON, Bool) *" UUID="f85ffab7-0a49-427e-8227-a3a3cdad9a89" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+          <interpolation active="True">
+            <value x="0" y="1" />
+            <value x="1" y="0" />
+          </interpolation>
+        </modifiers>
+        <display type="Output" serial="STM32F103C8/ SN-04e-cb9" trigger="normal" pin="Led" pinBrightness="255" />
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="4b3a311a-8929-497c-bcdf-cf2d66b2da42">
+      <active>true</active>
+      <description>AP_SPEED_H</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A320_Neo_FCU_SPEED_SET_DATA)" UUID="62e89f0c-4b42-4f7d-bfed-fc1b3b9ab1ad" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="">
+          <analog>
+            <onChange type="VariableInputAction" varType="number" varName="AP_SPEED_H" varExpression="$ / 100" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="0d7db2d1-7fe6-4181-9d59-17dcffa05327">
+      <active>true</active>
+      <description>AP_SPEED_T</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A320_Neo_FCU_SPEED_SET_DATA)" UUID="62e89f0c-4b42-4f7d-bfed-fc1b3b9ab1ad" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="">
+          <analog>
+            <onChange type="VariableInputAction" varType="number" varName="AP_SPEED_T" varExpression="($ % 100) / 10" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+    <config guid="380561cd-7af6-4975-834e-8b10597dc973">
+      <active>true</active>
+      <description>AP_SPEED_U</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="SimConnect" VarType="CODE" Value="(L:A320_Neo_FCU_SPEED_SET_DATA)" UUID="62e89f0c-4b42-4f7d-bfed-fc1b3b9ab1ad" />
+        <modifiers>
+          <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+          <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        </modifiers>
+        <display type="InputAction" serial="">
+          <analog>
+            <onChange type="VariableInputAction" varType="number" varName="AP_SPEED_U" varExpression="$ % 10" />
+          </analog>
+        </display>
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="a88edf32-93e9-410d-95be-636173c01d8a">
+      <active>true</active>
+      <description>test</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.7.1.0, Culture=neutral, PublicKeyToken=null" serial="" name="" type="-" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <preconditions />
+        <configrefs />
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
